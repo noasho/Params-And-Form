@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>TargilB</h1>
+    <p>Welcome to TargilB</p>
+
+    <form action="/params" method="GET">
+      <div>
+        <h2>human</h2>
+        <label for="human[]">first name:</label>
+        <input type="text" name="human[]" value="Greg">
+        
+        <label for="human[]">last name:</label>
+        <input type="text" name="human[]" value="Ivanklonsk">
+        
+        <label for="human[]">date of birth:</label>
+        <input type="date" name="human[]" value="2001-01-22">
+      </div>
+      <div>
+        <h2>cookie</h2>
+        <label for="cookie[1][1]">first name:</label>
+        <input type="text" name="cookie[1][1]" value="Crumble">
+        
+        <label for="cookie[0][lastName]">last name:</label>
+        <input type="text" name="cookie[0][lastName]" value="B">
+        
+        <label for="cookie[1][0]">date of baking:</label>
+        <input type="date" name="cookie[1][0]" value="2021-10-01">
+      </div>
+      <div>
+        <h2>numbers</h2>
+        <input type="number" value="1" name="number[0][1][2][3]">
+        <input type="number" value="2" name="number[0][1][2]">
+        <input type="number" value="3" name="number[0][1]">
+        <input type="number" value="4" name="number[0]">
+      </div>
+      <br>
+      <button>submit</button>
+    </form>
+
+    <h4>how we want output to look</h4>
+    <pre>
+      {
+        "human": {
+            "firstName": "",
+            "lastName": "",
+            "birthDate": ""
+        },
+        "cookie": {
+            "firstName": "",
+            "lastName": "",
+            "bakingDate": ""
+        },
+        "number": [
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    }
+    </pre>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- there seems to be some text in the css file...-->

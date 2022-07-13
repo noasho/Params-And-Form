@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--the form needs to be sent to "/add-dog-page/add-one".
+   the info sent in this format: 
+  {name: "dog name", breed: "dog breed"}
+-->
+
+<body>
+    <h1>ADD NEW DOG</h1>
+    <form method="POST" action="/add-dog-page/add-one">
+        <div id="dumdum">
+            <input type="text" placeholder="dogs name" name="name" />
+            <select id="breeds" name="breed">
+                <option value="American Shorthair">American Shorthair</option>
+                <option value="Bengal">Bengal</option>
+                <option value="Siamese">Siamese</option>
+                <option value="Toyger">Toyger</option>
+            </select>
+        </div>
+        <input type="submit" value="submitation" />
+    </form>
+</body>
+
+</html>

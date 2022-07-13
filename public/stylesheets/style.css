@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: thistle;
+}
+
+h1 {
+  background-color: rgb(163, 230, 223);
+  text-align: center;
+  box-shadow: 5px 6px #9c9c9c;
+  border-radius: 4px;
+}
+
+a {
+  color: #00b7ff;
+}
+
+/*
+eW91IHNlZW0gcmF0aGVyIGJvcmVkLi4uCgowMTEwMTAwMDAxMTEwMTAwMDExMTAxMDAwMTExMDAwMDAxMTEwMDExMDAxMTEwMTAwMDEwMTExMTAwMTAxMTExMDExMTAxMTEwMTExMDExMTAxMTEwMTExMDAxMDExMTAwMTExMTAwMTAxMTAxMTExMDExMTAxMDEwMTExMDEwMDAxMTEwMTAxMDExMDAwMTAwMTEwMDEwMTAwMTAxMTEwMDExMDAwMTEwMTEwMTExMTAxMTAxMTAxMDAxMDExMTEwMTExMDExMTAxMTAwMDAxMDExMTAxMDAwMTEwMDAxMTAxMTAxMDAwMDAxMTExMTEwMTExMDExMDAwMTExMTAxMDExMDAxMTAwMTExMTAwMDAwMTEwMDEwMDEwMTEwMTAwMDExMDEwMTAxMDExMDEwMDEwMDAxMDAwMTAxMTExMTAxMDEwMDEwMDExMDAwMTAwMTEwMTExMQo=
+*/
