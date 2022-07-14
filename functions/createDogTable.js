@@ -26,10 +26,10 @@ function createDogTable(dogs = []) {
                 <form>
                         <select id="breeds">
                                 <option value="all">All</option>
-                                <option value="American Shorthair">American Shorthair</option>
-                                <option value="Bengal">Bengal</option>
-                                <option value="Siamese">Siamese</option>
-                                <option value="Toyger">Toyger</option>
+                                <option value="German Shepherd">German Shepherd</option>
+                                <option value="Poodle">Poodle</option>
+                                <option value="Rottweiler">Rottweiler</option>
+                                <option value="Bulldog">Bulldog</option>
                         </select>
                         <input type='submit' value='filter'>
                 </form>
