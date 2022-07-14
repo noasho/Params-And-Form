@@ -4,15 +4,15 @@ class FCache {
     }
 
 
-    addOne(cat) {
-        this._memory.push(cat);
+    addOne(dog) {
+        this._memory.push(dog);
     }
 
-    addMany(cats) {
-        this._memory = this._memory.concat([...cats]);
+    addMany(dogs) {
+        this._memory = this._memory.concat([...dogs]);
     }
 
-    fetch() {
+    getAll() {
         return this._memory;
     }
 

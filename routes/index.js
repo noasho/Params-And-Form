@@ -37,59 +37,12 @@ router.get('/params', function (req, res, next) {
 
 router.post('/add-dog-page/add-one', (req, res, next) => {
   //add a dog using the cache.addOne() function with the dog from form.
-  res.send(
-
-    `<style>
-    body {
-      padding: 50px;
-      background-color: thistle;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    h1 {
-      /* background-color: rgb(163, 230, 223); */
-      text-align: center;
-      /* box-shadow: 5px 6px #9c9c9c; */
-      border-radius: 4px;
-    }
-    
-    a {
-      color: #00b7ff;
-    }
-    
-    input {
-      border-radius: 15px;
-      margin-bottom: 5vh;
-      height: 6vh;
-      text-indent: 3px;
-      background-color: white;
-      /* background-color: #00b7ff; */
-    }
-    
-    select {
-      border-radius: 15px;
-      margin-bottom: 5vh;
-      height: 6vh;
-      background-color: white;
-    }
-    
-    button{
-      border-radius: 15px;
-      margin-bottom: 5vh;
-      height: 6vh;
-      background-color: white;
-      margin-top: -11vh;
-    }
-  </style>`+
-
-    createDogTable(/*send all dogs using cache.fetch() */));
+  res.send(createDogTable(/*send all dogs using cache.getAll() */));
 })
 
 router.get('/filter-by-breed', (req, res) => {
   /**
-   * get dogs using cache.fetch()
+   * get dogs using cache.getAll()
    * filter dogs by breed from user
    */
   res.send(createDogTable(/* send filtered dogs to createdogTable */));
@@ -97,6 +50,6 @@ router.get('/filter-by-breed', (req, res) => {
 
 router.get('/add-many-dogs', function (req, res, next) {
   //add dogs using the cache.addMany() function with the dogs from form.
-  res.send(createDogTable(/*send all dogs using cache.fetch() */));
+  res.send(createDogTable(/*send all dogs using cache.getAll() */));
 })
 module.exports = router;

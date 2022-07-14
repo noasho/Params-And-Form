@@ -38,16 +38,16 @@ router.get('/params', function (req, res, next) {
 
 router.post('/add-dog-page/add-one', (req, res, next) => {
   //add a dog using the cache.addOne() function with the dog from form.
-  cache.addOne({ name: req.body.name, breed: req.body.breed });
-  res.send(createDogTable(cache.fetch()));
+  cache.addOne({ name: req.body.name, breed: req.body.breed }); // cache.addOne(req.body);
+  res.send(createDogTable(cache.getAll()));
 })
 
 router.get('/filter-by-breed', (req, res) => {
   /**
-   * get dogs using cache.fetch()
+   * get dogs using cache.getAll()
    * filter dogs by breed from user
    */
-  const dogs = [...cache.fetch()];
+  const dogs = [...cache.getAll()];
   const filterDogs = dogs.filter(dog => dog.breed === req.query.breed);
   res.send(createDogTable(filterDogs));
 })
@@ -55,7 +55,7 @@ router.get('/filter-by-breed', (req, res) => {
 router.get('/add-many-dogs', function (req, res, next) {
   //add dogs using the cache.addMany() function with the dogs from form.
   cache.addMany(req.query.dogs);
-  res.send(createDogTable(cache.fetch()));
+  res.send(createDogTable(cache.getAll()));
 })
 
 module.exports = router;

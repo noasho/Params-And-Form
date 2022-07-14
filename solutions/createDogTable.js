@@ -17,13 +17,58 @@ function createDogTable(dogs = []) {
                                                 <td> ${item.breed}  </td>
                                         </tr>
                                         `).join('')
-                                }
+                        }
                         </table>`
                         :
                         '<h3>no dogs </h3>'
                 }
-                <h3>filter by breed</h3>
-                <form action="/filter-by-breed" method="GET">
+                <style>
+                        body {
+                                padding: 50px;
+                                font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+                                background-color: thistle;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                        }
+                        
+                        h1 {
+                                text-align: center;
+                                border-radius: 4px;
+                        }
+                        
+                        a {
+                                color: #00b7ff;
+                        }
+                        
+                        input {
+                                border-radius: 15px;
+                                margin-bottom: 5vh;
+                                height: 6vh;
+                                text-indent: 3px;
+                                background-color: white;
+                        }
+                        
+                        select {
+                                border-radius: 15px;
+                                margin-bottom: 5vh;
+                                height: 6vh;
+                                background-color: white;
+                        }
+                        
+                        button{
+                                border-radius: 15px;
+                                margin-bottom: 5vh;
+                                height: 6vh;
+                                background-color: white;
+                                margin-top: -11vh;
+                        }
+                </style>
+                     
+                
+                <h3>filter by breed</h3>`
+                //to make it work add to here
+                `<form action="/filter-by-breed" method="GET">
                         <select id="breeds" name="breed">
                                 <option value="all">All</option>
                                 <option value="German Shepherd">German Shepherd</option>
@@ -33,6 +78,7 @@ function createDogTable(dogs = []) {
                         </select>
                         <input type='submit' value='filter'>
                 </form>
+
                 <form action='/addDog.html'>
                         <input type='submit' value='add new dog'>
                 </form>`
