@@ -2,17 +2,44 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: thistle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  background-color: rgb(163, 230, 223);
+  /* background-color: rgb(163, 230, 223); */
   text-align: center;
-  box-shadow: 5px 6px #9c9c9c;
+  /* box-shadow: 5px 6px #9c9c9c; */
   border-radius: 4px;
 }
 
 a {
   color: #00b7ff;
+}
+
+input {
+  border-radius: 15px;
+  margin-bottom: 5vh;
+  height: 6vh;
+  text-indent: 3px;
+  background-color: white;
+  /* background-color: #00b7ff; */
+}
+
+select {
+  border-radius: 15px;
+  margin-bottom: 5vh;
+  height: 6vh;
+  background-color: white;
+}
+
+button{
+  border-radius: 15px;
+  margin-bottom: 5vh;
+  height: 6vh;
+  background-color: white;
+  margin-top: -11vh;
 }
 
 /*
