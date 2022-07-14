@@ -2,6 +2,11 @@ var express = require('express');
 var router = express.Router();
 const { cache } = require('../fcache/fcache')
 const { createDogTable } = require('../functions/createDogTable')
+
+
+// FIRST PART - PARAMS
+
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.send(` 
@@ -34,6 +39,10 @@ router.get('/params', function (req, res, next) {
     `</pre>`
   )
 });
+
+
+
+// SECOND PART - FORMS
 
 router.post('/add-dog-page/add-one', (req, res, next) => {
   //add a dog using the cache.addOne() function with the dog from form.
