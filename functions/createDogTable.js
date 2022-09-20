@@ -66,10 +66,10 @@ function createDogTable(dogs = []) {
                 </style>
                      
                 
-                <h3>filter by breed</h3>`
-                //to make it work add to here
-                `<form>
-                        <select id="breeds">
+                <h3>filter by breed</h3>
+                
+                <form action="/filter-by-breed" method="get">
+                        <select id="breeds" name="breed">
                                 <option value="all">All</option>
                                 <option value="German Shepherd">German Shepherd</option>
                                 <option value="Poodle">Poodle</option>
