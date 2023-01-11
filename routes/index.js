@@ -57,7 +57,7 @@ router.get('/filter-by-breed', (req, res) => {
   res.send(createDogTable(/* send filtered dogs to createdogTable */));
 })
 
-router.get('/add-many-dogs', function (req, res, next) {
+router.post('/add-many-dogs', function (req, res, next) {
   //add dogs using the cache.addMany() function with the dogs from form.
   res.send(createDogTable(/*send all dogs using cache.getAll() */));
 })
